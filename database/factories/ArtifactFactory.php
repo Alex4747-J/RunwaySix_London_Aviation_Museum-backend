@@ -24,6 +24,7 @@ class ArtifactFactory extends Factory
         'origin' => fake()->randomElement(['RAF', 'RCAF', 'Canadian Army', 'Royal Navy', 'US Air Force']),
         'material' => fake()->randomElement(['Leather', 'Steel', 'Wood', 'Brass', 'Cotton', 'Paper']),
         'description' => fake()->paragraph(),
+        'additional_info' => fake()->paragraph(),
         'image_path' => null,
     ];
 }
