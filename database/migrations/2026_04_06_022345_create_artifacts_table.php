@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('origin', 255)->nullable();
             $table->string('material', 255)->nullable();
             $table->text('description')->nullable();
-            $table->string('image_path', 255)->nullable();          
+            $table->text('additional_info')->nullable();
+            $table->string('image_path', 255)->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
