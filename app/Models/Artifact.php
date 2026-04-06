@@ -17,6 +17,7 @@ class Artifact extends Model
         'origin',
         'material',
         'description',
+        'additional_info',
         'image_path',
     ];
 
@@ -25,3 +26,4 @@ class Artifact extends Model
         return $query->orderBy('name', 'asc');
     }
 }
+    
