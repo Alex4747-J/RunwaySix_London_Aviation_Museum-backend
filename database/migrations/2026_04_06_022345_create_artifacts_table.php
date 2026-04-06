@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('artifacts', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
-            $table->string('date_info', 100)->nullable();
             $table->string('image_path', 255)->nullable();
             $table->text('description')->nullable();
             $table->integer('sort_order')->default(0);            
