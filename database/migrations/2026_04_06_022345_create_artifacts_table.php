@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('artifacts', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
-            $table->string('image_path', 255)->nullable();
+            $table->string('object_type', 255)->nullable();
+            $table->string('period', 255)->nullable();
+            $table->string('origin', 255)->nullable();
+            $table->string('material', 255)->nullable();
             $table->text('description')->nullable();
-            $table->integer('sort_order')->default(0);            
+            $table->string('image_path', 255)->nullable();          
             $table->softDeletes();
             $table->timestamps();
         });
