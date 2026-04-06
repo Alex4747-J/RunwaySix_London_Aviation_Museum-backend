@@ -12,18 +12,16 @@ class Artifact extends Model
 
     protected $fillable = [
         'name',
-        'date_info',
-        'image_path',
+        'object_type',
+        'period',
+        'origin',
+        'material',
         'description',
-        'sort_order',
-    ];
-
-    protected $casts = [
-        'sort_order' => 'integer',
+        'image_path',
     ];
 
     public function scopeOrdered($query)
     {
-        return $query->orderBy('sort_order', 'asc');
+        return $query->orderBy('name', 'asc');
     }
 }
