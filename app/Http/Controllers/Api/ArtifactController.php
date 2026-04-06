@@ -52,6 +52,7 @@ class ArtifactController extends Controller
             'origin' => $request->input('origin', null),
             'material' => $request->input('material', null),
             'description' => $request->input('description', null),
+            'additional_info' => $request->input('additional_info', null),
             'image_path' => $request->input('image_path', null),
 
         ]);
@@ -94,6 +95,10 @@ class ArtifactController extends Controller
 
         if ($request->has('description')) {
             $artifact->description = $request->input('description');
+        }
+
+        if ($request->has('additional_info')) {
+            $artifact->additional_info = $request->input('additional_info');
         }
 
         if ($request->has('image_path')) {
