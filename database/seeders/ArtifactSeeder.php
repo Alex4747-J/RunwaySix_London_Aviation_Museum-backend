@@ -29,9 +29,9 @@ class ArtifactSeeder extends Seeder
                 <li>AG - Air Gunner</li>
             </ul>
             <p>A full set of wings was awarded to pilots upon successful completion of flight training. These badges symbolized both qualification and status within the aircrew and were worn on the uniform.</p>',
-            'image_path' => 'images/august12.png',
+            'image_path' => 'images/artifacts/RCAF-Wing-Insignias.jpg',
         ],
-
+    
         [
             'name' => 'Canadian Memorial Cross ',
             'object_type' => 'Military Decoration (Memorial Medal)',
@@ -39,7 +39,7 @@ class ArtifactSeeder extends Seeder
             'origin' => 'Canada',
             'material' => 'Silver (Medal); Case - Cardboard, Paper, Metal, And Velvet Lining',
             'description' => '<p>The Memorial Cross, commonly known as the Silver Cross, was awarded to the mothers and widows of Canadian service members who died in active service. Instituted in 1919, it became a significant symbol of personal sacrifice and national remembrance. The decoration was typically worn or kept by the recipient in honour of their fallen relative.</p>',
-            'image_path' => 'images/august12.png',
+            'image_path' => 'images/artifacts/Canadian-Memorial-Cross.jpg',
         ],
 
         [
@@ -50,7 +50,7 @@ class ArtifactSeeder extends Seeder
             'material' => 'Plastic',
             'description' => '<p>This model represents a Supermarine Spitfire but has been inaccurately marked with the squadron code “VY-Q” and serial number “P3854,” which are associated with a Hawker Hurricane flown by Group Captain Peter Townsend.</p>
             <p>The additional markings, including the Donald Duck emblem, are linked to Squadron Leader Jan Zumbach of No. 303 (Polish) Squadron. Zumbach did fly Spitfires during the Second World War, including during the Battle of Britain.</p>',
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Spitfire-Model.jpg',
         ],
 
         [
@@ -61,7 +61,7 @@ class ArtifactSeeder extends Seeder
             'material' => 'Metal; Chemical Charge (For Smoke Marker)',
             'description' => '<p?>This practice bomb was used in aerial training, particularly within the British Commonwealth Air Training Plan (BCATP). Trainee aircrew flying aircraft such as the Avro Anson would pass over ground targets measuring approximately 30 feet square and release these bombs, each weighing about 11 pounds.</p>
             <p>Upon impact, the bomb emitted a puff of smoke, allowing observers to accurately identify the point of impact. Trainees typically made three passes over a target, dropping two bombs per sortie. Over the course of a six-week training program, a student might release as many as 117 practice bombs.</p>',
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Practice-Bomb.jpg',
         ],
 
         [
@@ -73,7 +73,7 @@ class ArtifactSeeder extends Seeder
             'description' => "<p>These skates, goalie stick, and blocker glove were used by Murray Dowey during the 1948 Winter Olympics in St. Moritz, Switzerland, as part of the gold medal-winning Royal Canadian Air Force (RCAF) Flyers team.</p>
             <p>The stick bears the “Battleship” stamp, referring to a brand of hockey sticks manufactured by Albert “Battleship” Leduc, a former Montreal Canadiens defenseman who later established his own company following his retirement from the NHL in the 1930s.</p>
             <p>Dowey played a key role in the team's success, recording five shutouts and achieving a goals-against average of 0.62, which remains an Olympic record.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Hockey-Gear.jpg',
         ],
         
         [
@@ -89,7 +89,7 @@ class ArtifactSeeder extends Seeder
             <p>In Toronto, he attended Jarvis Collegiate Institute, where he met his future wife, Miriam Isaacs (née Lavine). After graduation, he began pursuing a career in accounting before enlisting in the Royal Canadian Air Force during the Second World War.</p>
             <p>Serving as a navigator, he flew 35 operational missions over Europe, primarily in Halifax bombers, consistently bringing his crew home safely. Navigators played a critical role, performing complex calculations under combat conditions, often in low-light environments where the success of the mission depended on their precision.</p>
             <p>Following the war, he returned to Toronto, married Miriam, and had two sons, Howard and Peter. He completed his studies in accounting and spent his entire professional career with one firm, eventually retiring as a partner.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/RCAF-Uniform.jpg',
         ],
 
         [
@@ -102,7 +102,7 @@ class ArtifactSeeder extends Seeder
             The only known individual from London, Ontario, is Keith Caspell, who later served as a bomb aimer in a Halifax bomber with No. 427 Squadron in 1944.</p>",
             'additional_info' => "<p>Group photographs were typically taken for each training course, often at the beginning of instruction. The museum holds only two such group photographs in its collection.</p>
             <p>During the Second World War, there were just over 100 training courses for both Air Navigators and Air Bombers under the BCATP, reflecting the scale of Canada's aircrew training program.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Air-Bombers.jpg',
         ],
 
         [
@@ -114,7 +114,7 @@ class ArtifactSeeder extends Seeder
             'description' => "<p>This court-mounted medal group was awarded to Flying Officer Nathan Isaacovitch of the Royal Canadian Air Force (RCAF) in recognition of his service during the Second World War.</p>
             <p>The medals, from left to right, are: the 1939-45 Star, the France and Germany Star, the Defence Medal, the Canadian Volunteer Service Medal with bar and Bomber Command clasp, and the 1939-45 War Medal.</p>
             <p>These decorations reflect Isaacovitch's operational service in the European theatre, including his role as a navigator flying missions over occupied Europe.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Medals.jpg',
         ],
 
         [
@@ -127,7 +127,7 @@ class ArtifactSeeder extends Seeder
             <p>Graduation was marked by a formal public ceremony in which trainees paraded before a reviewing stand and were individually presented with their wings. Air Observers initially received an “O” brevet, later replaced by the “N” for Navigator, while Air Bombers received a “B” brevet.</p>
             <p>The ceremony was typically presided over by the base commander, often Wing Commander W. R. Kingsland, who presented the wings to the graduates. On this occasion, both an Air Bomber and an Air Navigator course completed training simultaneously.</p>
             <p>At any given time, as many as seven training courses could be active at the base, with wings ceremonies held approximately every two weeks.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/1943-Program.jpg',
         ],
 
         [
@@ -139,7 +139,7 @@ class ArtifactSeeder extends Seeder
             'description' => "<p>This Royal Canadian Air Force (RCAF) Women's Division uniform consists of a dress jacket and dress cap associated with two service members.</p>
             <p>The dress cap belonged to Marilyn Chalk, who served in the RCAF from April 1957 to April 1959. The dress jacket belonged to Corporal Glenora (“Glen”) Cole, who served from 1957 to 1964.</p>
             <p>The Women's Division of the RCAF played an important role in supporting air force operations during and after the Second World War, with members serving in a variety of administrative and technical positions.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Uniform-Women.jpg',
         ],
 
         [
@@ -154,7 +154,7 @@ class ArtifactSeeder extends Seeder
             <p>The 2420 Aircraft Control and Warning Squadron (Auxiliary), RCAF, was based at Crumlin, Ontario, from 1957 to 1961. As a part-time reserve unit, its members trained during the summer at Falconbridge, Ontario. Similar AC&W squadrons were located across Canada.</p>
             <p>In the event of war or national emergency, these units would have operated as “Guardians of the Sky,” supporting early warning systems from radar installations along the Pinetree Line. This network of radar stations, later integrated under the North American Aerospace Defense Command (NORAD), was designed to detect potential Soviet bomber attacks during the early Cold War.</p>
             <p>With the development of the Semi-Automatic Ground Environment (SAGE) system, which used advanced computer networks to coordinate radar data, the role of AC&W squadrons became obsolete, and the units were disbanded in 1961.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/Western-Plaque.jpg',
         ],
 
                 [
@@ -165,7 +165,7 @@ class ArtifactSeeder extends Seeder
             'material' => 'Woven Textile (Likely Wool Or Cotton Yarn)',
             'description' => "<p>This decorative wall hanging features the insignia of the Royal Canadian Air Force (RCAF), including the crowned eagle and maple leaf emblem.</p>
             <p>Produced as a display piece rather than for uniform use, such items were commonly created for commemorative, decorative, or institutional purposes. The insignia reflects the identity and heritage of the RCAF and would have been used to signify affiliation, pride, or service.</p>",
-            'image_path' => 'images/august13.png',
+            'image_path' => 'images/artifacts/RCAF-Insignia.jpg',
         ],
     ];
 
