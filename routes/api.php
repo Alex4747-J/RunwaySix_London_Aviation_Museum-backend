@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\ArtifactController;
 use App\Http\Controllers\Api\EventsBlogController;
+use App\Http\Controllers\Api\RemembranceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -34,3 +35,16 @@ Route::get('/events-blogs/{eventsBlog}', [EventsBlogController::class, 'show']);
 Route::patch('/events-blogs/{eventsBlog}', [EventsBlogController::class, 'update']);
 Route::delete('/events-blogs/{eventsBlog}', [EventsBlogController::class, 'destroy']);
 Route::post('/events-blogs/{eventsBlog}/restore', [EventsBlogController::class, 'restore']);
+
+/**
+ * Remembrance API Routes
+ */
+
+Route::get('/remembrances', [RemembranceController::class, 'index']);
+Route::get('/remembrances/search', [RemembranceController::class, 'search']);
+Route::post('/remembrances', [RemembranceController::class, 'store']);
+Route::get('/remembrances/admin', [RemembranceController::class, 'adminIndex']);
+Route::get('/remembrances/{remembrance}', [RemembranceController::class, 'show']);
+Route::patch('/remembrances/{remembrance}', [RemembranceController::class, 'update']);
+Route::delete('/remembrances/{remembrance}', [RemembranceController::class, 'destroy']);
+Route::post('/remembrances/{remembrance}/restore', [RemembranceController::class, 'restore']);
