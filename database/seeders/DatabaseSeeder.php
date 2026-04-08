@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             EventsBlogSeeder::class,
             ArtifactSeeder::class,
             RemembranceSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }
