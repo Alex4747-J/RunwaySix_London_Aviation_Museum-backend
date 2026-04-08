@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ArtifactController;
+use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\EventsBlogController;
 use App\Http\Controllers\Api\RemembranceController;
 use Illuminate\Http\Request;
@@ -10,6 +11,14 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+
+/**
+ * Login Routes
+ */
+
+Route::post('/login', [AuthController::class, 'login'])->middleware('web');
+
+Route::get('/me', [AuthController::class, 'me'])->middleware('auth:sanctum');
 
 /**
  * Artifacts API Routes
