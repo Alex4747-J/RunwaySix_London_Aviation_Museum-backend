@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\ArtifactController;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\EventsBlogController;
 use App\Http\Controllers\Api\RemembranceController;
 use Illuminate\Http\Request;
@@ -11,6 +12,12 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+
+/**
+ * Contact API Routes
+ */
+
+Route::post('/contact', [ContactController::class, 'index']);
 
 /**
  * Login Routes
