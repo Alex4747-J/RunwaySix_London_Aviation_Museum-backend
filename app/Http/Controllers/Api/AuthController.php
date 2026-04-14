@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\UnauthorizedException;
+use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
@@ -17,14 +18,16 @@ class AuthController extends Controller
         ]);
 
         if (! Auth::attempt($credentials)) {
-            throw new UnauthorizedException('Incorrect login details');
+            throw ValidationException::withMessages([
+                'email' => ['The provided credentials are incorrect.'],
+            ]);
         }
 
         /**
          * Regenerate the session to prevent "session fixation"
          * @link https://owasp.org/www-community/attacks/Session_fixation
          */
-        $request->session()->regenerate();
+        // $request->session()->regenerate();
 
         /** @var User $user */
         $user = Auth::user();
@@ -32,6 +35,12 @@ class AuthController extends Controller
         $token = $user->createToken('login_token', ['*']);
 
         return ['token' => $token->plainTextToken];
+    }
+
+    public function logout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+        return response()->json(['message' => 'Logged out']);
     }
 
     /**
