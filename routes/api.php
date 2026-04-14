@@ -27,6 +27,8 @@ Route::post('/login', [AuthController::class, 'login'])->middleware('web');
 
 Route::get('/me', [AuthController::class, 'me'])->middleware('auth:sanctum');
 
+Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+
 /**
  * Artifacts API Routes
  */
