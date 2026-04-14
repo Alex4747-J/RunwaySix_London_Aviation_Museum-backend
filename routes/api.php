@@ -23,7 +23,10 @@ Route::post('/contact', [ContactController::class, 'index']);
  * Login Routes
  */
 
-Route::post('/login', [AuthController::class, 'login'])->middleware('web');
+// Route::post('/login', [AuthController::class, 'login'])->middleware('web');
+// We do not use middleware('web') for the login route because we are using token-based authentication (Laravel Sanctum) and we do not want to use sessions for authentication. The login route will return a token that the frontend can use for subsequent requests to authenticate the user.
+
+Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/me', [AuthController::class, 'me'])->middleware('auth:sanctum');
 
