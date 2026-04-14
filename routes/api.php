@@ -2,8 +2,6 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ArtifactController;
-use App\Http\Controllers\Api\AuthController;
-use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\EventsBlogController;
 use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\RemembranceController;
