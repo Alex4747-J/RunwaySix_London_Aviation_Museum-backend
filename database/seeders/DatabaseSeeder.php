@@ -24,6 +24,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             EventsBlogSeeder::class,
+            ArtifactSeeder::class,
+            RemembranceSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }

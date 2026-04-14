@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ArtifactController;
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\EventsBlogController;
 use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\RemembranceController;
@@ -23,14 +25,9 @@ Route::post('/contact', [ContactController::class, 'index']);
  * Login Routes
  */
 
-//Route::post('/login', [AuthController::class, 'login'])->middleware('web'); 
-//-> Do not use this one sice we don't want to use sessions for authentication, we want to use tokens. The 'web' middleware is for session based authentication, we want to use 'auth:sanctum' middleware for token based authentication. The login route should not be protected by any middleware since it's the route that issues the token.
-
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'login'])->middleware('web');
 
 Route::get('/me', [AuthController::class, 'me'])->middleware('auth:sanctum');
-
-Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
 /**
  * Artifacts API Routes

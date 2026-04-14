@@ -36,33 +36,37 @@ class EventsBlogSeeder extends Seeder
             <h3>Visitor Information</h3>
             <p>Admission is free. Visitors are encouraged to arrive early for the commemorative programme to ensure seating and participation in the ceremony.</p>
             <p>The event will take place at the London Aviation Museum, with access to selected exhibits available during the programme. For further details or enquiries, visitors are encouraged to contact the museum directly.</p>',
-            'image_path' => 'images/august12.png',
+            'image_path' => 'images/events-blog/events-rem_day.jpg',
             ],
 
             [
             'title' => '427 Wing: A Local Legacy',
             'post_type' => 'blog',
             'description' => 'The origins and ongoing role of 427 (London) Wing within the RCAF Association.',
-             'content' => "<h3>Discover the Spirit of Flight in London, Ontario</h3>
-            <p>Tucked beside London International Airport sits a hidden gem for aviation enthusiasts, history lovers, and curious visitors alike: the London Aviation Museum.</p>
-            <p>Operated by the 427 (London) Wing Royal Canadian Air Force Association, the museum celebrates Canada's rich aviation heritage and the people who made it possible. Inside the museum, visitors can explore a fascinating collection of Royal Canadian Air Force memorabilia, artifacts, photographs, and aviation stories that span generations of flight.</p>
-            <h3>A Building with History</h3>
-            <p>The museum is located in a historic World War II airmen's canteen built between 1939 and 1940. During the war years, the site was part of the training grounds for pilots and observers in the British Commonwealth Air Training Plan, one of the most important aviation training programs of the Second World War.</p>
-            <p>Thousands of aircrew trained across Canada during this time, with the nearby airfield, then known as RCAF Station Crumlin, playing an important role in preparing airmen for service overseas.</p>
-            <p>Today, the museum stands as a living tribute to that history.</p>
-            <h3>Preserving Stories of Canadian Aviation</h3>
-            <p>Visitors to the museum will find displays filled with uniforms, photographs, equipment, and personal stories from Canadian airmen and women. These exhibits help preserve the memory of those who served while also educating new generations about Canada's aviation legacy.</p>
-            <p>The museum is maintained by passionate volunteers who dedicate their time to collecting artifacts, sharing knowledge, and keeping these stories alive.</p>
-            <h3>More Than a Museum</h3>
-            <p>A visit to the site offers more than historical displays. The 427 Wing facility is also a vibrant community hub that includes:</p>
-            <ul>
-                <li>Aviation and military exhibits</li>
-                <li>A café and gathering space</li>
-                <li>Event halls and community activities</li>
-                <li>Support programs for veterans and Air Cadets</li>
-            </ul>
-            <p>Whether you're a lifelong aviation enthusiast or simply looking for a unique place to explore local history, the Spirit of Flight Aviation Museum offers a meaningful look at the people and stories behind Canada's aviation heritage.</p>",
-            'image_path' => 'images/august12.png',
+             'content' => "<h3>Introduction</h3>
+            <p>Long before it became home to a museum and community gathering space, the site of the 427 (London) Wing Royal Canadian Air Force Association played an important role in Canada's wartime aviation history.</p>
+
+            <p>Located near London International Airport, the building that now houses the Spirit of Flight Aviation Museum dates back to the early years of World War II.</p>
+
+            <h3>The Training Ground for a Generation of Aircrew</h3>
+            <p>In 1939 and 1940, Canada became a key participant in the British Commonwealth Air Training Plan, an ambitious Allied program designed to train thousands of pilots, navigators, and aircrew.</p>
+
+            <p>During this period, the London airport area was known as RCAF Station Crumlin, where training schools such as the No. 3 Elementary Flying Training School and No. 4 Observer School operated.</p>
+
+            <p>Young airmen from Canada and across the Commonwealth trained here before being deployed overseas.</p>
+
+            <h3>A Legacy That Continues Today</h3>
+            <p>After the war, the air station evolved alongside Canada's aviation industry, eventually becoming part of the modern civilian airport and surrounding aviation community.</p>
+
+            <p>Today, volunteers from the 427 Wing maintain the London Aviation Museum, preserving artifacts and stories from Canada's military aviation history.</p>
+
+            <p>The organization also supports veterans and community initiatives, including visits to veterans at Parkwood Hospital and support for mental health programs serving former service members.</p>
+
+            <h3>Keeping Aviation History Alive</h3>
+            <p>Museums like this play an important role in protecting local heritage. Through displays, educational programs, and community engagement, the Spirit of Flight Aviation Museum helps ensure that the achievements of Canada's air force and the individuals who served, are never forgotten.</p>
+
+            <p>For visitors, it's a chance to step into the past and experience the history of aviation right where it happened.</p>",
+            'image_path' => 'images/events-blog/blog-427_wing.jpg',
         ],
     ];
          foreach ($eventsBlogs as $post) {
