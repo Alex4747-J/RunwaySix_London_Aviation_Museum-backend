@@ -22,11 +22,13 @@ class ContactController extends Controller
 
         $name = $request->input('name');
         $email = $request->input('email');
+        $subject = $request->input('subject');
         $message = $request->input('message');
 
         $contactRequest = ContactRequest::create([
             'name' => $name,
             'email' => $email,
+            'subject' => $subject,
             'message' => $message
         ]);
 
@@ -34,6 +36,8 @@ class ContactController extends Controller
          . htmlspecialchars($name)
          . " , email: "
          . htmlspecialchars($email)
+         . "<br>"
+         . htmlspecialchars($subject)
          . "<br>"
          . htmlspecialchars($message);
 
